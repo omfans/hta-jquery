@@ -1,0 +1,40 @@
+<HTA:APPLICATION BORDER="dialog" INNERBORDER="no" BORDERSTYLE="normal" CAPTION="yes" MAXIMIZEBUTTON="no" MINIMIZEBUTTON="yes" SHOWINTASKBAR="yes" SINGLEINSTANCE="no" SYSMENU="yes" WINDOWSTATE="normal">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<title>HTA+jQuery TEST</title>
+
+<script language="javascript">
+window.resizeTo( 1, 1 );
+window.moveTo( 0, 0 );
+</script>
+
+<style type="text/css">
+#loading {
+	float:left;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: verdana; 
+	padding:80px 0 80px 50px;
+}
+#main {
+	display:none;
+}
+</style>
+</head>
+<body style="margin:0px;padding:0px;overflow:hidden;background-color:buttonface;font-size:12px;line-height:24px;">
+
+<!--加载界面-->
+<div id="loading" style="">
+	加载中......
+</div>
+
+<!--主界面-->
+<div id="main" style=""></div>
+
+<!--RequireJS + jQuery 实现主控-->
+<script data-main="http://superos.github.com/hta_jquery/main.js" src="http://superos.github.com/hta_jquery/require-jquery.js"></script>
+</body>
+</hta>
